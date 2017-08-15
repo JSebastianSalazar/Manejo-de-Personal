@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1370.0" style="-fx-background-color: #cfd8dc;" stylesheets="@../img/Diseño.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="personal.FXMLDocumentController">
+   <children>
+      <Pane layoutX="51.0" layoutY="49.0" prefHeight="599.0" prefWidth="1266.0" style="-fx-background-color: #eceff1;">
+         <children>
+            <PasswordField fx:id="txtClave" focusTraversable="false" layoutX="506.0" layoutY="360.0" prefHeight="44.0" prefWidth="286.0" promptText="Clave">
+               <effect>
+                  <Glow level="0.0" />
+               </effect>
+               
+            </PasswordField>
+            <Button fx:id="btnIngresar" layoutX="549.0" layoutY="443.0" mnemonicParsing="false" onAction="#onIngresar" prefHeight="44.0" prefWidth="200.0" text="Ingresar" />
+            <ImageView fitHeight="300.0" fitWidth="400.0" layoutX="749.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/LogoExcarbon.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="541.0" layoutY="185.0" prefHeight="44.0" prefWidth="233.0" styleClass="personal" text="Personal">
+               <font>
+                  <Font name="Impact" size="40.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

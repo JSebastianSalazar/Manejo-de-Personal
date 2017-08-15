@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1370.0" style="-fx-background-color: #cfd8dc;" stylesheets="@../img/Diseño.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="personal.InicioController">
+   <children>
+      <TabPane layoutX="9.0" layoutY="11.0" prefHeight="679.0" prefWidth="1348.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Inicio">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="572.0" prefWidth="1289.0" style="-fx-background-color: #eceff1;" stylesheets="@../img/Diseño.css">
+                     <children>
+                        <Label fx:id="idFecha" layoutX="1009.0" layoutY="548.0" prefHeight="35.0" prefWidth="252.0" styleClass="personal" />
+                        <ImageView fitHeight="200.0" fitWidth="500.0" layoutX="401.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/LogoExcarbon.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Administrar Personal ">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="642.0" prefWidth="1360.0" style="-fx-background-color: #eceff1;">
+                     <children>
+                        <Label layoutX="71.0" layoutY="21.0" styleClass="personalINsertar" stylesheets="@../img/Diseño.css" text="PERSONAL" />
+                        <TextField fx:id="txtCedulaR" layoutX="20.0" layoutY="94.0" prefHeight="30.0" prefWidth="180.0" promptText="Cedula" />
+                        <TextField fx:id="txtNombreR" layoutX="250.0" layoutY="94.0" prefHeight="30.0" prefWidth="180.0" promptText="Nombre" />
+                        <TextField fx:id="txtSaludR" layoutX="494.0" layoutY="94.0" prefHeight="30.0" prefWidth="180.0" promptText="Salud" />
+                        <TextField fx:id="txtPensionR" layoutX="250.0" layoutY="144.0" prefHeight="30.0" prefWidth="180.0" promptText="Pensión" />
+                        <TextField fx:id="txtArlR" layoutX="20.0" layoutY="144.0" prefHeight="30.0" prefWidth="180.0" promptText="Arl" />
+                        <TextField fx:id="txtCompensacionR" layoutX="494.0" layoutY="144.0" prefHeight="30.0" prefWidth="180.0" promptText="Compensacion" />
+                        <TextField fx:id="txtCamisaR" layoutX="20.0" layoutY="196.0" prefHeight="30.0" prefWidth="180.0" promptText="Talla Camisa" />
+                        <TextField fx:id="txtPantalonR" layoutX="250.0" layoutY="196.0" prefHeight="30.0" prefWidth="180.0" promptText="Talla Pantalon" />
+                        <TextField fx:id="txtBotasR" layoutX="494.0" layoutY="196.0" prefHeight="30.0" prefWidth="180.0" promptText="Talla Botas" />
+                        <ComboBox fx:id="comboEmpresaR" layoutX="20.0" layoutY="250.0" prefHeight="30.0" prefWidth="180.0" promptText="Empresa" />
+                        <ComboBox fx:id="comboOcupacionR" layoutX="250.0" layoutY="250.0" prefHeight="30.0" prefWidth="180.0" promptText="Ocupacion" />
+                        <DatePicker fx:id="dateFechaR" layoutX="20.0" layoutY="302.0" prefHeight="30.0" prefWidth="180.0" promptText="Fecha Inicio" />
+                        <Button fx:id="btnRegistarPersonal" layoutX="298.0" layoutY="337.0" mnemonicParsing="false" onAction="#onRegistrarPersonal" prefHeight="25.0" prefWidth="150.0" text="Registrar" />
+                        <Label layoutX="1161.0" layoutY="21.0" styleClass="personalINsertar" text="Beneficiarios " />
+                        <TextField fx:id="txtCedulaCotizanteR" layoutX="756.0" layoutY="94.0" prefHeight="30.0" prefWidth="180.0" promptText="Cedula Cotizante" />
+                        <TextField fx:id="txtCedulaBeneficiario" layoutX="756.0" layoutY="144.0" prefHeight="30.0" prefWidth="180.0" promptText="Numero Beneficiario" />
+                        <ComboBox fx:id="comboTipoBeneficiario" layoutX="960.0" layoutY="94.0" prefHeight="30.0" prefWidth="180.0" promptText="Documento Beneficiario" />
+                        <TextField fx:id="txtNombreBeneficiario" layoutX="1161.0" layoutY="94.0" prefHeight="30.0" prefWidth="180.0" promptText="Nombre Beneficiario" />
+                        <TextField fx:id="txtParentescoBeneficiario" layoutX="756.0" layoutY="196.0" prefHeight="30.0" prefWidth="180.0" promptText="Parentesco Beneficiario" />
+                        <Button fx:id="btnRegistrarBeneficiario" layoutX="975.0" layoutY="250.0" mnemonicParsing="false" onAction="#onRegistrarBeneficiario" prefHeight="25.0" prefWidth="150.0" text="Registrar" />
+                        <TextField fx:id="txtSalarioR" layoutX="494.0" layoutY="250.0" prefHeight="30.0" prefWidth="180.0" promptText="Salario" />
+                        <Separator layoutX="20.0" layoutY="64.0" prefHeight="3.0" prefWidth="257.0" />
+                        <Separator layoutX="1071.0" layoutY="64.0" prefHeight="4.0" prefWidth="239.0" />
+                        <Separator layoutX="712.0" layoutY="47.0" orientation="VERTICAL" prefHeight="290.0" prefWidth="6.0" />
+                        <Separator layoutX="70.0" layoutY="411.0" prefHeight="6.0" prefWidth="1209.0" />
+                        <Separator layoutX="23.0" layoutY="489.0" prefHeight="3.0" prefWidth="234.0" />
+                        <Label layoutX="32.0" layoutY="452.0" styleClass="personalINsertar" text="Activar Trabajador" />
+                        <TextField fx:id="txtCedulaActivar" layoutX="29.0" layoutY="532.0" prefHeight="30.0" prefWidth="180.0" promptText="Cedula" />
+                        <DatePicker fx:id="dateFechaActivar" layoutX="231.0" layoutY="532.0" prefHeight="30.0" prefWidth="180.0" promptText="Fecha Reingreso " />
+                        <Separator layoutX="455.0" layoutY="432.0" orientation="VERTICAL" prefHeight="200.0" />
+                        <Button fx:id="btnActivos" layoutX="134.0" layoutY="597.0" mnemonicParsing="false" onAction="#onActivar" prefHeight="25.0" prefWidth="150.0" text="Aceptar" />
+                        <Button layoutX="651.0" layoutY="597.0" mnemonicParsing="false" onAction="#onAseptarInactividad" prefHeight="25.0" prefWidth="150.0" text="Eliminar" />
+                        <DatePicker fx:id="txtFechaInactividad" layoutX="741.0" layoutY="532.0" prefHeight="30.0" prefWidth="180.0" promptText="Fecha Final" />
+                        <TextField fx:id="txtCedulaInactividad" layoutX="515.0" layoutY="532.0" prefHeight="30.0" prefWidth="180.0" promptText="Cedula" />
+                        <Label layoutX="605.0" layoutY="452.0" styleClass="personalINsertar" text="Eliminar Trabajador" />
+                        <Separator layoutX="593.0" layoutY="490.0" prefHeight="4.0" prefWidth="250.0" />
+                     </children>
+                     
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Personal Activo">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #eceff1;">
+                     <children>
+                        <TableView fx:id="TablaPersonalActivo" layoutY="14.0" prefHeight="541.0" prefWidth="1348.0">
+                          <columns>
+                            <TableColumn fx:id="cedulaTable" prefWidth="120.0" text="Cedula" />
+                            <TableColumn fx:id="nombreTable" prefWidth="224.0" text="Nombre" />
+                              <TableColumn fx:id="SalarioTable" prefWidth="127.0" text="Salario" />
+                              <TableColumn fx:id="empresaTable" prefWidth="118.0" text="Centro" />
+                              <TableColumn fx:id="saludTable" prefWidth="129.0" text="Salud" />
+                              <TableColumn fx:id="fechaInicioTable" prefWidth="135.0" text="Fecha Inicio" />
+                              <TableColumn fx:id="arlTable" prefWidth="115.0" text="ARL" />
+                              <TableColumn fx:id="pensionTable" prefWidth="105.0" text="Pensión" />
+                              <TableColumn fx:id="cargoTable" prefWidth="110.0" text="Cargo" />
+                              <TableColumn fx:id="tblCamisaActivoo" prefWidth="56.0" text="Camisa" />
+                              <TableColumn fx:id="tblPantalonActivo" prefWidth="55.0" text="Pantalon" />
+                              <TableColumn fx:id="tblCalzadoActivo" prefWidth="53.0" text="Calzado" />
+                          </columns>
+                        </TableView>
+                        <Button layoutX="120.0" layoutY="599.0" mnemonicParsing="false" onAction="#onBuscarTBLActivo" prefHeight="35.0" prefWidth="190.0" text="Buscar" />
+                        <Button layoutX="413.0" layoutY="599.0" mnemonicParsing="false" onAction="#onReporteTBL" prefWidth="190.0" text="Trabajadores" />
+                        <Button layoutX="714.0" layoutY="599.0" mnemonicParsing="false" onAction="#onReporteXCentro" prefHeight="35.0" prefWidth="190.0" text="Centro" />
+                        <Button layoutX="1017.0" layoutY="599.0" mnemonicParsing="false" onAction="#onReporteBeneficiarioCedula" prefWidth="190.0" text="Beneficiarios " />
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Personal Inactivo">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #eceff1;">
+                     <children>
+                        <TableView fx:id="TablaInactividad" layoutX="1.0" layoutY="14.0" prefHeight="541.0" prefWidth="1348.0">
+                          <columns>
+                            <TableColumn fx:id="tblCedulaINactivo" prefWidth="120.0" text="Cedula" />
+                            <TableColumn fx:id="tblNombreInactivo" prefWidth="224.0" text="Nombre" />
+                              <TableColumn fx:id="tblSalarioInactivo" prefWidth="127.0" text="Salario" />
+                              <TableColumn fx:id="tblCentroInactivo" prefWidth="118.0" text="Centro" />
+                              <TableColumn fx:id="tblSaludInactivo" prefWidth="129.0" text="Salud" />
+                              <TableColumn fx:id="tblFechaIngresoInactivo" prefWidth="100.0" text="Fecha Ingreso" />
+                              <TableColumn fx:id="tblFechaSalidaInactivo" prefWidth="100.0" text="Fecha Salida" />
+                              <TableColumn fx:id="tblDiasInactivo" prefWidth="96.0" text="Dias Laborados" />
+                              <TableColumn fx:id="tblCargoInactivo" prefWidth="141.0" text="Cargo" />
+                              <TableColumn fx:id="tblCamisaInactivo" prefWidth="61.0" text="Camisa" />
+                              <TableColumn fx:id="tblPantalonInactivo" prefWidth="59.0" text="Pantalon" />
+                              <TableColumn fx:id="tblCalzadoInactivo" prefWidth="72.0" text="Calzado" />
+                          </columns>
+                        </TableView>
+                        <Button layoutX="120.0" layoutY="599.0" mnemonicParsing="false" onAction="#onBuscarPersonaInactivo" prefHeight="35.0" prefWidth="190.0" text="Buscar" />
+                        <Button layoutX="413.0" layoutY="599.0" mnemonicParsing="false" onAction="#onReporteINactivoTotal" prefHeight="35.0" prefWidth="190.0" text="Trabajadores" />
+                        <Button layoutX="714.0" layoutY="599.0" mnemonicParsing="false" onAction="#onReporteCentroInactivo" prefHeight="35.0" prefWidth="190.0" text="Centro" />
+                        <Button layoutX="1017.0" layoutY="599.0" mnemonicParsing="false" onAction="#onReporteBeneficiariosInactivo" prefHeight="35.0" prefWidth="190.0" text="Beneficiarios" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Prestamos">
+               <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #eceff1;">
+                     <children>
+                        <TableView fx:id="tblPrestamos" layoutX="1.0" layoutY="14.0" prefHeight="541.0" prefWidth="1348.0">
+                          <columns>
+                            <TableColumn fx:id="tblCedulaPrestamo" prefWidth="128.0" text="Cedula" />
+                            <TableColumn fx:id="tblNombreReporte" prefWidth="265.0" text="Nombre" />
+                              <TableColumn fx:id="tblValorReporte" prefWidth="159.0" text="Valor" />
+                              <TableColumn fx:id="tblCuotasPrestamo" prefWidth="159.0" text="Cuotas" />
+                              <TableColumn fx:id="tblSaldoCuotasPrestamo" minWidth="4.0" prefWidth="159.0" text="Saldo  Cuota" />
+                              <TableColumn fx:id="tblAbonoPrestamos" minWidth="4.0" prefWidth="159.0" text="Abono" />
+                              <TableColumn fx:id="tblPagosPrestamos" prefWidth="159.0" text="Pago Cuota" />
+                              <TableColumn fx:id="tblFechaPrestamos" prefWidth="159.0" text="Fecha" />
+                          </columns>
+                        </TableView>
+                        <Button layoutX="120.0" layoutY="599.0" mnemonicParsing="false" onAction="#onNuevoPrestamo" prefHeight="35.0" prefWidth="190.0" text=" Prestamos" />
+                        <Button layoutX="413.0" layoutY="599.0" mnemonicParsing="false" onAction="#onPagos" prefHeight="35.0" prefWidth="190.0" text="Pagos" />
+                        <Button layoutX="714.0" layoutY="599.0" mnemonicParsing="false" onAction="#onReportePersonaPrestamo" prefHeight="35.0" prefWidth="190.0" text="Personal" />
+                        <Button layoutX="1017.0" layoutY="599.0" mnemonicParsing="false" onAction="#onTotalReporte" prefHeight="35.0" prefWidth="190.0" text="Central" />
+                     </children>
+                    
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+       
+      </TabPane>
+   </children>
+</AnchorPane>

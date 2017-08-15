@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1370.0" style="-fx-background-color: #cfd8dc;" stylesheets="@../img/Diseño.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="personal.ActualizacionPrestamosController">
+   <children>
+      <Pane layoutX="54.0" layoutY="47.0" prefHeight="604.0" prefWidth="1261.0" style="-fx-background-color: #eceff1;">
+         <children>
+            <ImageView fitHeight="160.0" fitWidth="360.0" layoutX="29.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/LogoExcarbon.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="721.0" layoutY="96.0" styleClass="labelGRA" stylesheets="@../img/Diseño.css" text="Actualizar prestamo" />
+            <Separator layoutX="438.0" layoutY="142.0" prefHeight="0.0" prefWidth="776.0" />
+            <TextField fx:id="idCedula" focusTraversable="false" layoutX="100.0" layoutY="268.0" prefHeight="44.0" prefWidth="260.0" promptText="Cedula" />
+            <DatePicker fx:id="fechaPrestamos" focusTraversable="false" layoutX="500.0" layoutY="268.0" prefHeight="44.0" prefWidth="260.0" promptText="Fecha" />
+            <TextField fx:id="idValor" focusTraversable="false" layoutX="900.0" layoutY="268.0" prefHeight="44.0" prefWidth="260.0" promptText="Valor" />
+            <TextField fx:id="idCuota" focusTraversable="false" layoutX="100.0" layoutY="370.0" prefHeight="44.0" prefWidth="260.0" promptText="Saldo cuota" />
+            <Button fx:id="idCancelar" layoutX="295.0" layoutY="475.0" mnemonicParsing="false" onAction="#onCancelar" prefHeight="30.0" prefWidth="180.0" text="Cancelar" />
+            <Button fx:id="idCalcular1" layoutX="738.0" layoutY="475.0" mnemonicParsing="false" onAction="#onCalcul" prefHeight="30.0" prefWidth="180.0" text="Calcular" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

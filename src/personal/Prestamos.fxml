@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1370.0" style="-fx-background-color: #cfd8dc;" stylesheets="@../img/Diseño.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="personal.PrestamosController">
+   <children>
+      <Pane layoutX="54.0" layoutY="47.0" prefHeight="604.0" prefWidth="1261.0" style="-fx-background-color: #eceff1;">
+         <children>
+            <ImageView fitHeight="160.0" fitWidth="350.0" layoutX="29.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/LogoExcarbon.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="idCedula" focusTraversable="false" layoutX="100.0" layoutY="268.0" prefHeight="44.0" prefWidth="260.0" promptText="Cedula" />
+            <TextField fx:id="idValor" focusTraversable="false" layoutX="900.0" layoutY="268.0" prefHeight="44.0" prefWidth="260.0" promptText="Valor" />
+            <TextField fx:id="idCuota" focusTraversable="false" layoutX="100.0" layoutY="352.0" prefHeight="44.0" prefWidth="260.0" promptText="Saldo cuota" />
+            <TextField fx:id="idCuotas" editable="false" focusTraversable="false" layoutX="526.0" layoutY="352.0" prefHeight="44.0" prefWidth="260.0" promptText="Cuotas" />
+            <Button fx:id="idCalcular" layoutX="738.0" layoutY="475.0" mnemonicParsing="false" onAction="#onCalcul" prefHeight="30.0" prefWidth="180.0" text="Calcular" />
+            <Button fx:id="idCancelar" layoutX="295.0" layoutY="475.0" mnemonicParsing="false" onAction="#onCancelar" prefHeight="30.0" prefWidth="180.0" text="Cancelar" />
+            <Separator layoutX="431.0" layoutY="130.0" prefHeight="0.0" prefWidth="776.0" />
+            <Label layoutX="537.0" layoutY="86.0" />
+            <Label layoutX="661.0" layoutY="86.0" styleClass="labelGRA" text="Realiza un nuevo prestamo" />
+            <DatePicker fx:id="fechaPrestamos" layoutX="526.0" layoutY="268.0" prefHeight="44.0" prefWidth="260.0" promptText="Fecha" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
